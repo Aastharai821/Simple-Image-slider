@@ -5,23 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider</title>
-    <link rel="stylesheet" href="/style.css">
-
+    <title>Try</title>
+    <link rel="stylesheet" href="/styling.css">
 </head>
 
 <body>
-    <main>
-        <img src="/images/1.jpg" class="slide" alt="1">
-        <img src="/images/2.jpg" class="slide" alt="2">
-        <img src="/images/3.jpg" class="slide" alt="3">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="/images/1.jpg" style="width:100%">
+            <div class="text">Galaxy View</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="/images/2.jpg" style="width:100%">
+            <div class="text">Sunset View</div>
+        </div>
 
-    </main>
-    <div class="nav">
-        <button onclick="goPrev()">Prev</button>
-        <button onclick="goNext()">Next</button>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="/images/3.jpg" style="width:100%">
+            <div class="text">Cloud View</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="/images/4.jpg" style="width:100%">
+            <div class="text">Misty View</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="/images/5.jpg" style="width:100%">
+            <div class="text">Shadow View</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="/images/6.jpg" style="width:100%">
+            <div class="text">Shangri-La</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
     </div>
-    <script src="/app.js"></script>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script src="/ap.js"></script>
 </body>
 
 </html>
